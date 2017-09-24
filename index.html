@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>setTimeOut VS console.log</title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(1);
+		setTimeout(function(){
+			console.log(5);
+		},0);
+		console.log(2);
+		setTimeout(function(){
+			console.log(6);
+		},0);
+		console.log(3);
+		setTimeout(function(){
+			console.log(7);
+		},0);
+		console.log(4);
+		//以上，我们能看出console.log会执行在settimeout函数之前，当执行完后，settimeout函数再根据延时时间先后执行，若时间相等，则顺序执行
+	</script>
+</body>
+</html>
